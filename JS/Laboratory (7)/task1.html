@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <script>
+            function btnClick() {
+                let Txt1 = document.Test.bt.value;
+                let Txt2 = document.Test.bt.name;
+                document.getElementById('ex1').innerHTML = "<HR>" + "Вы нажали кнопку: " + Txt1.bold() + " с именем: " + Txt2.bold() + "<HR>";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Нажатие кнопки</h1>
+        <div id="ex1"></div>
+        <form name="Test">
+            <input type="button" name="bt" value="Щелкни здесь!" onClick="btnClick()">
+        </form>
+    </body>
+</html>
